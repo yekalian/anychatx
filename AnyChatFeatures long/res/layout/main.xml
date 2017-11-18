@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+<!--       <ScrollView
+		android:id="@+id/ScrollView01"
+		android:layout_height="wrap_content"
+		android:layout_width="fill_parent"
+		android:scrollbars="vertical"
+		android:layout_weight="1"
+		>
+	<TextView android:id="@+id/in"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+    />
+    </ScrollView>
+    
+     <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:onClick="onUpButtonClicked"
+            android:text="shang" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/button1"
+            android:layout_toLeftOf="@+id/button1"
+            android:onClick="onLeftButtonClicked"
+            android:text="zuo" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/button2"
+            android:layout_alignBottom="@+id/button2"
+            android:layout_toRightOf="@+id/button1"
+            android:onClick="onRightButtonClicked"
+            android:text="you" />
+
+       <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/button3"
+            android:layout_toLeftOf="@+id/button3"
+            android:layout_toRightOf="@+id/button2"
+            android:onClick="onDownButtonClicked"
+            android:text="xia" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/button4"
+            android:layout_toLeftOf="@+id/button4"
+            android:onClick="onStartButtonClicked"
+            android:text="kaishi" />
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/button5"
+            android:layout_alignBottom="@+id/button5"
+            android:layout_toRightOf="@+id/button4"
+            android:onClick="onStopButtonClicked"
+            android:text="tingzhi" />
+
+    </RelativeLayout>
+    -->
+	  <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="#339966"
+            android:textSize="30sp"
+            android:text="蓝牙无线控制" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="23dp"
+            android:textColor="#003399"
+            android:textSize="15sp"
+            android:text="发送如下数据控制：\n1、小车前进\n2、小车后退\n3、小车向左\n4、小车向右\n5、小车停止\n6、小车启动\n开发者注意：蓝牙服务端串口输出为16进制的数据" />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+		<EditText  
+			android:id="@+id/Edit0" 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:layout_gravity="bottom">
+		</EditText>
+		<Button 
+			android:text="发送" 
+			android:id="@+id/Button02" 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:textColor="#66FFFF"
+			android:background="#CC3300"
+			android:onClick="onSendButtonClicked">
+		</Button>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"       
+        >
+       	<Button 
+			android:text="连接" 
+			android:id="@+id/Button03" 
+			android:layout_width="match_parent" 
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:textColor="#339900"
+			android:background="#CC0066"
+			android:onClick="onConnectButtonClicked">
+		</Button>
+<!--		<Button 
+			android:text="保存" 
+			android:id="@+id/Button04" 
+			android:layout_width="match_parent" 
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:onClick="onSaveButtonClicked">
+		</Button>
+		<Button 
+			android:text="清空" 
+			android:id="@+id/Button05" 
+			android:layout_width="match_parent" 
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:onClick="onClearButtonClicked">
+		</Button>
+		-->
+		<Button 
+			android:text="退出" 
+			android:id="@+id/Button06" 
+			android:layout_width="match_parent" 
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:textColor="#CC0000"
+			android:background="#FFFF99"
+			android:onClick="onQuitButtonClicked">
+		</Button>
+    </LinearLayout>
+</LinearLayout>

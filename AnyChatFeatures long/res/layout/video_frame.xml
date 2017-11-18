@@ -1,0 +1,166 @@
+<!-- com.example.anychatfeatures 为当前包名 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res/"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context=".VideoActivity" >
+
+    <include
+        android:id="@+id/webMainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="275dp"
+        android:layout_above="@+id/linearLayout1"
+        android:layout_alignParentTop="true"
+        android:layout_weight="1.12"
+        layout="@layout/video_session"
+        android:gravity="center_vertical" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="88dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="#7f7f7f"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/btn_TakePhotoSelf"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/button_background"
+            android:src="@drawable/takephotoself" />
+
+        <Button
+            android:id="@+id/stop"
+            android:layout_width="43dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.46"
+            android:background="@drawable/button_background"
+            android:onClick="stop"
+            android:text="stop"
+            android:textColor="@color/shollow_red"
+            android:textSize="15sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/trans_white" />
+
+        <ImageButton
+            android:id="@+id/btn_TakePhotoOther"
+            android:layout_width="55dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.57"
+            android:background="@drawable/button_background"
+            android:src="@drawable/takephotoother" />
+
+        <ImageButton
+            android:id="@+id/btn_speakControl"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:background="@drawable/button_background"
+            android:src="@drawable/speak_on" />
+
+        <ImageButton
+            android:id="@+id/btn_cameraControl"
+            android:layout_width="55dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.24"
+            android:background="@drawable/button_background"
+            android:src="@drawable/camera_on" />
+
+        <ImageButton
+            android:id="@+id/bluetooth"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/button_background"
+            android:src="@drawable/bluetooth" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/trans_white" />
+
+        <Button
+            android:id="@+id/endCall"
+            android:layout_width="58dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/button_background"
+            android:onClick="onEndCall"
+            android:text="@string/str_endCall"
+            android:textColor="@color/shollow_red"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="78dp"
+        android:layout_above="@+id/linearLayout2"
+        android:layout_alignParentLeft="true"
+        android:background="#7f7f7f" >
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.45"
+            android:background="@color/trans_white" />
+
+        <ImageButton
+            android:id="@+id/upbutton"
+            android:layout_width="76dp"
+            android:layout_height="80dp"
+            android:layout_weight="0.45"
+            android:background="@drawable/button_background"
+            android:src="@drawable/forward" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.45"
+            android:background="@color/trans_white" />
+
+        <ImageButton
+            android:id="@+id/downbutton"
+            android:layout_width="76dp"
+            android:layout_height="80dp"
+            android:layout_weight="0.45"
+            android:background="@drawable/button_background"
+            android:src="@drawable/back" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.45"
+            android:background="@color/trans_white" />
+
+        <ImageButton
+            android:id="@+id/leftbutton"
+            android:layout_width="76dp"
+            android:layout_height="80dp"
+            android:layout_weight="0.45"
+            android:background="@drawable/button_background"
+            android:src="@drawable/left" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.45"
+            android:background="@color/trans_white" />
+
+        <ImageButton
+            android:id="@+id/rightbutton"
+            android:layout_width="76dp"
+            android:layout_height="80dp"
+            android:layout_weight="0.45"
+            android:background="@drawable/button_background"
+            android:src="@drawable/right"  />
+    </LinearLayout>
+
+  
+</RelativeLayout>
